@@ -1,0 +1,68 @@
+/* Estilo general para todos los divs */
+div {
+    border: none;
+    padding: 0;
+    margin: 0 auto;
+    
+}
+
+/* Contenedor principal */
+#contenedor {
+    width: 980px;
+    height: 600px;
+    text-align: center;
+    
+}
+
+/* Cabecera */
+#cabecera {
+    height: 40px;
+    background-color: #ff0000; /* Rojo */
+    padding-top: 20px;
+}
+
+
+
+/* Cuerpo principal */
+#cuerpo {
+    height: 500px;
+    width: 980px;
+    background-color: aquamarine;
+    
+}
+/* Menú */
+#menu {
+    height: 200px;
+    width: 150px;
+    background-color: #4f704f; /* Verde oscuro */
+    padding-top: 10px;
+    float: left
+}
+
+/* Sección de información */
+#informacion {
+    height: 500px;
+    width: 575px;
+    float:left;
+    padding-top: 250px;
+    background-color: #00ff0d; /* Verde claro */
+}
+
+/* Lateral */
+#lateral {
+    height: 500px;
+    width: 250px;
+    float:left;
+    padding-top: 250px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    background-color: #0400ff; /* Azul */
+}
+
+/* Pie de página */
+#footer {
+    clear: both; /* Asegura que el pie esté debajo de las secciones flotantes */
+    height: 40px;
+    padding-top:15px;
+    background-color: #ffd000; /* Amarillo */
+}
