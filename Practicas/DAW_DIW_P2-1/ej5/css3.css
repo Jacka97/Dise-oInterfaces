@@ -1,0 +1,53 @@
+div {
+    border: none; /* Sin bordes por defecto */
+    padding: 0; /* Sin padding por defecto */
+    margin: 0; /* Centrar el div */
+}
+.content{
+    width: 960px;
+}
+.header {
+    background-color: yellow;
+    border: 1px solid grey;
+    padding-top: 10px;
+    width: 960px;
+    height: 35px;
+    text-align: center;
+}
+.menu{
+    background-color: rgb(184, 184, 184);
+    padding-top: 3px;
+    width: 100%;
+    height: 20px;
+    width: 960px;
+    border: 1px solid grey;
+}
+.menu a{
+    display: inline;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000;
+}
+.main {
+   float: left;
+   width: 960px;
+}
+.content{
+    margin-top: 20px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+}
+
+
+.sidebar {
+    width: 18%;
+    float: left;
+    background-color: lightgray;
+}
+.footer {
+    text-align: center;
+    clear: both;
+    width: 960px;
+    background-color: darkgray;
+}

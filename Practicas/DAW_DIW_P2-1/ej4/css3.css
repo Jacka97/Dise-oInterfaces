@@ -1,0 +1,102 @@
+/* Estilo general para todos los divs */
+div {
+    border: none; /* Sin bordes por defecto */
+    padding: 0; /* Sin padding por defecto */
+    margin: 0; /* Centrar el div */
+}
+
+/* Contenedor principal */
+#contenedor {
+    width: 100%; /* Ancho relativo */
+    height: 1080px; /* Altura del contenedor como un porcentaje de la vista */
+}
+#cuerpo{
+    width: 100%;
+    height: 90%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Header */
+#header {
+    background-color: #9c1717; /* Color de fondo para el header */
+    height: 5%; /* Altura del header como un porcentaje de la vista */
+}
+#header ul li{
+    list-style: none;
+    display: inline;
+    padding: 30px;
+    color: white;
+    font-size: 19px;
+}
+
+
+/* Aside: barra lateral izquierda */
+#aside {
+    float: left; /* Permite que flote a la izquierda */
+    width: 20%; /* Ancho relativo */
+    height: 100%; /* Altura del aside como un porcentaje de la vista */
+    background-color: #179c91; /* Color de fondo para el aside */
+}
+#aside ul li{
+    list-style: none;
+    color: white;
+    margin-top: 80px;
+    font-size: 25px;
+}
+
+/* Main: área principal de contenido */
+#main {
+    border: none; /* Sin bordes por defecto */
+    padding: 0; /* Sin padding por defecto */
+    margin: 0; /* Centrar el main */
+    float: left; /* Permite que flote a la izquierda */
+    width: 80%; /* Ancho relativo */
+    height: 100%; /* Altura del main como un porcentaje de la vista */
+    background-color: #9c1795; /* Color de fondo para el main */
+}
+
+
+#contenido1 {
+    border: 4px solid red; /* Bordes rojos para el contenido */
+    width: 96%; /* Ancho relativo */
+    height: 45%; /* Altura del contenido como un porcentaje de la vista */
+    padding: 0; /* Sin padding por defecto */
+    margin:1.5%;
+}
+
+/* Texto dentro de contenido (1) */
+#texto1, #texto2{
+    border: 4px solid blue; /* Bordes azules para los textos */
+    height: 90%; /* Altura fija para los textos */
+    margin: 2%; /* Margen inferior para separación */
+    width: 44.5%;
+    float: left; /* Permite que floten a la izquierda */
+}
+
+
+
+#contenido2 {
+    border: 4px solid red; /* Bordes rojos para el contenido */
+    width: 96%; /* Ancho relativo */
+    height: 45%; /* Altura del contenido como un porcentaje de la vista */
+    padding: 0; /* Sin padding por defecto */
+    margin:10px
+}
+
+#texto3, #texto4, #texto5 {
+    border: 4px solid blue; /* Bordes azules para los textos */
+    height: 92%; /* Altura fija para los textos */
+    margin: 2%; /* Margen inferior para separación */
+    width: 28%;
+    float: left; /* Permite que floten a la izquierda */
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    clear: both; /* Limpia los floats para que no se superpongan */
+    height: 5%; /* Altura del footer como un porcentaje de la vista */
+    background-color: yellow; /* Color de fondo para el footer */
+}
+

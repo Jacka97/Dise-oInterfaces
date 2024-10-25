@@ -25,15 +25,15 @@ div {
 
 /* Cuerpo principal */
 #cuerpo {
-    height: 500px;
+    height: 755px;
     width: 980px;
-    background-color: aquamarine;
+    background-color: rgb(56, 228, 56);
     
 }
 /* Menú */
 #menu {
-    height: 200px;
-    width: 150px;
+    height: 400px;
+    width: 190px;
     background-color: #4f704f; /* Verde oscuro */
     padding-top: 10px;
     float: left
@@ -42,7 +42,7 @@ div {
 /* Sección de información */
 #informacion {
     height: 500px;
-    width: 575px;
+    width: 535px;
     float:left;
     padding-top: 250px;
     background-color: #00ff0d; /* Verde claro */

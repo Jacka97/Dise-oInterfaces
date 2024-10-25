@@ -2,7 +2,7 @@
 div {
     border: none;
     padding: 0;
-    margin: 0;
+    margin: auto;
 
 }
 
@@ -37,9 +37,8 @@ div {
     height: 300px;
     background-color: #4f704f;
     /* Verde oscuro */
-    width: 180px;
+    width: 190px;
     display: inline-block;
-    margin-left: 0px;
     
 }
 /* Sección de información */
@@ -52,7 +51,7 @@ div {
     display: inline-block; /* Agregado display: inline-block */
 }
 #lateral {
-    width: 200px;
+    width: 202px;
     height: 500px;
 
     margin-bottom: 5px;

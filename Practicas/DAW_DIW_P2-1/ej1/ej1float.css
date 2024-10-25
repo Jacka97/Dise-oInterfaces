@@ -10,7 +10,7 @@ div {
     width: 980px;
     height: 600px;
     text-align: center;
-   
+    margin: auto;
     
 }
 
@@ -30,10 +30,9 @@ div {
 
 /* Cuerpo principal */
 #cuerpo {
-    height: 500px;
+    height: 755px;
     width: 980px;
-    background-color: aquamarine;
-    
+    background-color: #dfaaaa; /* Gris claro */
 }
 
 /* Sección de información */

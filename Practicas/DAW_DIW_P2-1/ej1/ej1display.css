@@ -2,14 +2,13 @@
 div {
     border: none;
     padding: 0;
-    margin: 0;
+    margin: auto;
 
 }
 
 /* Contenedor principal */
 #contenedor {
     width: 980px;
-    height: 600px;
     text-align: center;
 }
 
@@ -31,9 +30,9 @@ div {
     padding-top: 10px;
 }
 #cuerpo {
-    height: 500px;
-    width: auto;
-    margin-bottom: 5px;
+    height: 505px;
+    width: 980px;
+
     background-color: aquamarine;
     
 }
@@ -62,7 +61,7 @@ div {
     clear: both;
     /* Asegura que el pie esté debajo de las secciones flotantes */
     height: 40px;
-    padding-top: 15px;
+   
     background-color: #ffd000;
     /* Amarillo */
 }
