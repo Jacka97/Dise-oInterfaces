@@ -1,10 +1,9 @@
-div {
+
+.content{
+    width: 960px;
     border: none; /* Sin bordes por defecto */
     padding: 0; /* Sin padding por defecto */
     margin: 0; /* Centrar el div */
-}
-.content{
-    width: 960px;
 }
 .header {
     background-color: yellow;
@@ -29,11 +28,12 @@ div {
     color: #000;
 }
 .main {
-   float: left;
    width: 960px;
 }
 .content{
     margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
     border: 1px solid grey;
     float: left;
     width: 80%;
@@ -41,13 +41,23 @@ div {
 
 
 .sidebar {
-    width: 18%;
-    float: left;
+    position: relative;
+    width: 165px;
+    height: 100px;
+    left:83%;
+    top: 20px;
     background-color: lightgray;
+    text-align: center;
+}
+.sidebar p{
+    position: relative;
+    top:-409px
 }
 .footer {
     text-align: center;
+    border-top: 4px solid grey;
     clear: both;
     width: 960px;
-    background-color: darkgray;
+    padding-top: 15px;
+    
 }
