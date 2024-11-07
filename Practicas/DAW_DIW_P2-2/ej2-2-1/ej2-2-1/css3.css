@@ -1,0 +1,176 @@
+/* Estilo general del cuerpo de la página */
+html{
+    background-color: white;
+}
+body {
+    margin-top: 20px; /* Margen superior de 20px */
+    text-align: center; /* Alineación del texto al centro */
+    background: linear-gradient(
+        to bottom,
+        rgb(227,76,38) 0%, 
+        rgb(240, 101, 41, 0) 90%); /* Fondo de color con gradiente */
+}
+/* Contenedor principal de la página */
+#page {
+    width: 960px; /* Ancho fijo de 960px */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    text-align: left; /* Alineación del texto a la izquierda */
+    box-shadow: 10px 0 10px grey;
+    border-radius: 20px;
+
+}
+
+/* Estilo del encabezado de la página */
+header {
+    font-family: Courier; /* Fuente tipo Courier */
+    color: white; /* Color del texto en blanco */
+    font-size: 1.1em; /* Tamaño de fuente ligeramente más grande */
+    background: linear-gradient(
+        to bottom,
+        #0170B9 0%, 
+        #27AADE 90%);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 6px solid black; /* Borde negro de 6px */
+}
+
+/* Estilo del título dentro del encabezado */
+header h1 {
+    background-image: url("./imgs/logo.png"); /* Imagen de fondo para el logo */
+    background-repeat: no-repeat; /* No repetir la imagen de fondo */
+    background-position: 25px center; /* Posición de la imagen en el encabezado */
+    padding-left: 100px; /* Espaciado a la izquierda de 100px */
+}
+
+/* Estilo de la barra de navegación */
+nav {
+    font-family: Courier, monospace; /* Fuente tipo Courier y monospace */
+    font-size: 1.4em; /* Tamaño de fuente más grande */
+    color: silver; /* Color del texto en plata */
+    text-align: center; /* Alineación del texto al centro */
+    background: linear-gradient(
+        to bottom,
+        rgb(213,186,50) 0%, 
+        rgb(255, 218, 62) 90%);
+}
+
+/* Estilo de la lista de navegación */
+nav ul {
+    list-style: none; /* Eliminar estilo de lista */
+    margin-top: 0; /* Margen superior de 0 */
+    margin-bottom: 0; /* Margen inferior de 0 */
+    padding: 0; /* Sin padding */
+    height: 100px;
+}
+
+/* Estilo de los elementos de la lista en la navegación */
+nav li {
+    display: inline-block; /* Mostrar elementos en línea */
+    padding-top: 65px; /* Espaciado superior de 65px */
+    padding-bottom: 10px; /* Espaciado inferior de 10px */
+    text-align: center; /* Alineación del texto al centro */
+}
+
+
+/* Estilo de la sección de contenidos */
+#contenidos {
+    background-image: url("./imgs/book.png"); /* Imagen de fondo para contenidos */
+    background-repeat: no-repeat; /* No repetir la imagen de fondo */
+    padding: 70px; /* Espaciado interno de 70px */
+    background-position-x: 105px; /* Posición X de la imagen de fondo */
+    background-position-y: 5px; /* Posición Y de la imagen de fondo */
+}
+
+/* Estilo de la sección de videos */
+#videos {
+    background-image: url("./imgs/film.png"); /* Imagen de fondo para videos */
+    background-repeat: no-repeat; /* No repetir la imagen de fondo */
+    padding: 70px; /* Espaciado interno de 70px */
+    background-position-x: 75px; /* Posición X de la imagen de fondo */
+    background-position-y: 5px; /* Posición Y de la imagen de fondo */
+}
+
+/* Estilo de la sección de contacto */
+#contacto {
+    background-image: url("./imgs/mail.png"); /* Imagen de fondo para contacto */
+    background-repeat: no-repeat; /* No repetir la imagen de fondo */
+    padding: 70px; /* Espaciado interno de 70px */
+    background-position-x: 90px; /* Posición X de la imagen de fondo */
+    background-position-y: 5px; /* Posición Y de la imagen de fondo */
+}
+
+/* Estilo de los enlaces en la navegación */
+nav a {
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    color: rgb(255, 255, 255); /* Color del texto en blanco */
+}
+
+
+/* Efecto al pasar el ratón sobre los enlaces de navegación */
+nav a:hover {
+    color: orange; /* Cambia el color a blanco al pasar el ratón */
+}
+
+/* Estilo del contenido principal */
+main {
+    font-family: Verdana; /* Fuente tipo Verdana */
+    font-size: 0.8em; /* Tamaño de fuente pequeño */
+    background-color: white;
+    height: 600px; /* Altura fija de 502px */
+    padding-top: 0; /* Sin espaciado superior */
+    padding: 15px;
+}
+
+/* Estilo de cada artículo */
+article {
+    width: 240px; /* Ancho fijo de cada artículo */
+    border-style: solid;
+    border-bottom-width: 60px;
+    border-width: 70px 20px 50px 20px;
+    text-align: center;
+    line-height: 1.8em;
+    
+    margin: 30px 15px; /* Margen de 30px vertical y 15px horizontal */
+    float: left; /* Flotar a la izquierda */
+    border-image: url("./recursos/movil.png") 70 20 40 20; /* Imagen de borde */
+}
+
+/* Estilo del encabezado de cada artículo */
+.article_header {
+    border-bottom: 1px solid #999999; /* Borde inferior gris */
+    padding: 10px 0; /* Espaciado interno de 10px arriba y abajo */
+}
+
+/* Estilo del título dentro del encabezado de cada artículo */
+.article_header h2 {
+    margin: 10px 0; /* Margen de 10px arriba y abajo */
+    font-size: 1.2em; /* Tamaño de fuente para el título */
+}
+h2{
+    text-shadow: 0 2px 2px grey;
+}
+
+
+/* Estilo del pie de página */
+footer {
+    clear: both; /* Limpiar flotantes */
+    color: white; /* Color del texto en blanco */
+    font-size: 0.7em; /* Tamaño de fuente pequeño */
+    text-align: center; /* Alineación del texto al centro */
+    background: linear-gradient(
+        to bottom,
+        #27AADE 0%, 
+        
+        #0170B9 90%);
+    border-top: 6px solid black; /* Bo#contentrde superior negro de 6px */
+    padding: 15px 0; /* Espaciado interno de 15px arriba y abajo */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 px 10px grey;
+
+}
+
+/* Estilo de los enlaces en el pie de página */
+footer a {
+    color: white; /* Color del texto en blanco */
+}
