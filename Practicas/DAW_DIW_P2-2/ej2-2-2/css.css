@@ -1,0 +1,140 @@
+/* Estilo general del body */
+body {
+    padding: 10px;
+}
+
+/* Estilo del header */
+header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-bottom: 3px dotted rgb(128, 128, 128); /* Línea punteada debajo */
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+/* Estilo del logo */
+#logo {
+    width: 8%;
+    height: 8vh;
+    float:left; /* Coloca el logo a la izquierda */
+    background-image: url("../ej2-2-1/imgs/javascript.png"); /* Imagen de fondo */
+    background-size: contain; /* Ajusta el tamaño de la imagen */
+}
+
+/* Estilo del contenedor principal (sección de navegación) */
+#primary {
+    width: 70%;
+    padding: 0;
+    float:left; /* Se posiciona a la izquierda */
+    text-align: center; /* Centra los elementos dentro */
+}
+
+/* Estilo para la lista de navegación */
+#primary ul {
+    list-style: none; /* Elimina los puntos de la lista */
+}
+
+#primary li {
+    color: white;
+    display: inline-block; /* Muestra los elementos en línea */
+    height: 50px;
+    width: 140px;
+    margin-right: 50px;
+    line-height: 50px; /* Centra el texto verticalmente */
+    background-color: black; /* Fondo negro para los ítems de navegación */
+}
+
+/* Estilo del buscador */
+#buscador {
+    width: 20%;
+    float:left; /* Coloca el buscador a la izquierda */
+    padding-top: 15px;
+    margin-left: 15px;
+}
+
+/* Estilo del sidebar secundario */
+#secondary {
+    width: 15%;
+    height: 50vh;
+    float:left; /* Coloca la barra lateral a la izquierda */
+    background-color: rgb(204, 204, 204); /* Color de fondo gris claro */
+    margin-bottom: 10px;
+    margin-left: 6px;
+}
+
+#secondary ul {
+    padding-top: 0;
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 5px;
+    margin: 0;
+}
+
+#secondary li {
+    text-align: center;
+    height: 9vh;
+    background-color: white; /* Fondo blanco */
+    margin: 6px;
+    margin-bottom: 5px;
+    line-height: 9vh; /* Centra el texto verticalmente */
+}
+
+/* Estilo de los artículos dentro de aside */
+aside article {
+    background-color: white; /* Fondo blanco */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilo del contenedor principal del contenido (main) */
+main {
+    width: 65%;
+    float:left; /* Coloca el main a la izquierda */
+    height: 50vh;
+    margin-left: 2.361%;
+}
+
+/* Estilo de aside (barra lateral) */
+aside {
+    margin-left: 2%;
+    width: 15%;
+    float: left;
+    height: 50vh;
+    background-color: rgb(204, 204, 204); /* Gris claro */
+}
+
+/* Estilos de los elementos dentro de section */
+section {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Estilo de los enlaces dentro de listas */
+ul a {
+    color: rgb(100, 100, 100); /* Color gris para los enlaces */
+}
+
+/* Estilo de los enlaces dentro de h5 */
+h5 a {
+    color: black; /* Color negro para los enlaces */
+}
+
+/* Estilo de la sección de redes sociales */
+#redes {
+    background-color: white; /* Fondo blanco */
+}
+
+/* Estilo del pie de página */
+footer {
+    border-top: 3px dotted grey; /* Línea punteada en la parte superior */
+    text-align: center; /* Centra el texto */
+    clear: both; /* Limpiar flotantes */
+}
+
+footer ul {
+    list-style: none; /* Elimina los puntos de la lista */
+}
+
+footer li {
+    display: inline-block; /* Muestra los elementos en línea */
+}

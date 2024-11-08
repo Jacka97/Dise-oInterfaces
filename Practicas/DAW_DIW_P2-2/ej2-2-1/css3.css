@@ -31,7 +31,8 @@ header {
         #27AADE 90%);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    border: 6px solid black; /* Borde negro de 6px */
+    padding: 10px;
+    border-bottom:6px solid black; /* Borde negro de 6px */
 }
 
 /* Estilo del título dentro del encabezado */
