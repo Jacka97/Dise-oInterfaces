@@ -1,0 +1,335 @@
+:root {
+    --fuente-principal: 'Pacifico';
+    --fuente-alternativa: sans-serif;
+    --tam-fuente-xs: 12px;
+    --tam-fuente-sm: 13px;
+    --tam-fuente-md: 15px;
+    --tam-fuente-lg: 17px;
+    --tam-fuente-xl: 17px;
+    --tam-max-contenedor-x: 1200px;
+    --tam-alto-encabezado-xs: 8vh;
+    --negro: #000;
+    --blanco: #FFF;
+    --fondo-encabezado: #B8D2F4;
+    --fondo-menu: var(--blanco);
+    --fondo-todo: var(--fondo-encabezado);
+    --color-texto: #517104;
+    --color-titulos-claro: #2CDA1C;
+    --color-titulos-oscuro: #1F411C;
+    --color-primario: #517104;
+    --color-secundario: #83A705;
+    --color-opuesto-primario: #894B26;
+    --color-opuesto-secundario: #F58A03;
+    --color-enlace: var(--color-opuesto-primario);
+    --color-enlace-hover: var(--color-opuesto-secundario);
+    --color-transparencia: rgba(0, 0, 0, 0.5);
+}
+
+html {
+    font-family: var(--fuente-principal), var(--fuente-alternativa);
+    font-size: var(--tam-fuente-xs);
+    background-color: var(--fondo-todo);
+    color: var(--color-texto);
+}
+
+*,
+:after,
+:before {
+    padding: 0;
+    margin: 0
+}
+body {
+    overflow-x: hidden;
+}
+#inicio,#nosotros,#contacto{
+    width: 100%;
+    height: 100vh;
+}
+header{
+    width: 100%;
+    height: var(--tam-alto-encabezado-xs);
+    background-color: var(--fondo-encabezado);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#logo{
+    width: 20%;
+    height: 100%;   
+    background-image: url("../img/house-158939.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#menu{
+    width: 100%;
+    height: 32vh;
+    display: inline-block;
+    box-sizing: border-box;
+    
+}
+#menu li{
+    list-style: none;
+    background-color: var(--blanco);
+    text-align: center;
+    height: 8vh;
+    padding: 3vh;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--color-opuesto-primario);
+
+}
+#menu li:last-child{
+    border-bottom: 0px;
+}
+#menu a{
+    text-decoration: none;
+    color: var(--color-opuesto-primario);
+    font-size: var(--tam-fuente-sx);
+    box-sizing: border-box;
+
+}
+#imagen1{
+    background-image: url("../img/casa-bosque-xs.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 64vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+#mensaje{
+    color: var(--color-titulos-claro);
+    font-size: var(--tam-fuente-sx);
+    width: 60%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color-titulos-claro);
+    background-color: var(--color-transparencia);
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+
+#sobreNosotros{
+    background-image: url("../img/texture-1674066_640.jpg");
+    height: 80vh;
+    padding: 2vh;
+}
+#sobreNosotros h2{
+    color: var(--color-titulos-oscuro);
+    text-align: center;
+    font-size: 3rem;
+}
+#imgSobre{
+    background-image: url("../img/casa-cielo-xs.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    width: 80%;
+    box-sizing: border-box;
+    margin: 5.5vh;
+    border: 1px solid var(--negro);
+    border-radius: 15px;
+
+}
+#modelos{
+    background-color: var(--blanco);
+}
+#modelos h2{
+    text-align: center;
+    font-size: 3rem;
+}
+#modelos h3{
+    text-align: center;
+    font-size: 2rem;
+}
+#modelos p{
+    padding: 3vh;
+}
+#imgModelo{
+    background-image: url("../img/casa-basica-xs.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 25vh;
+    margin-bottom: 2vh;
+}
+#imgCasaGran{
+    background-image: url("../img/casa-grande-xs.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 25vh;
+    margin-bottom: 2vh;
+}
+#imgLago{
+    background-image: url("../img/casa-lago-xs.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 25vh;
+}
+#galeria{
+    background-image: url("../img/texture-1674066_640.jpg");
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#galeria h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+#imgGal1{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    width: 90%;
+    height: 30vh;
+    background-image: url(../img/alone-1867464-xs.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    border: 1px solid var(--negro);
+}
+#imgGal2{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    width: 90%;
+    height: 30vh;
+    background-image: url(../img/architecture-1836070-xs.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    border: 1px solid var(--negro);
+}
+#imgGal3{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    width: 90%;
+    height: 30vh;
+    background-image: url(../img/autumn-1748644-xs.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    border: 1px solid var(--negro);
+}
+#imgGal4{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    width: 90%;
+    height: 30vh;
+    background-image: url(../img/apartment-3564955-xs.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    border: 1px solid var(--negro);
+}
+#imgGal5{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    width: 90%;
+    height: 30vh;
+    background-image: url(../img/country-house-540796-xs.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    border: 1px solid var(--negro);
+}
+#imgGal6{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    width: 90%;
+    height: 30vh;
+    background-image: url(../img/large-home-389271-xs.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    border: 1px solid var(--negro);
+}
+#escribenos{
+    background-image: url(../img/contacto-xs.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    box-sizing: border-box;
+}
+#escribenos h2{
+    color: var(--color-opuesto-primario);
+    margin: 2vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    font-size: 3rem;
+}
+#divForm{
+    width: 80%;
+    height: 70vh;
+    border: 1px solid var(--color-transparencia);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-top: 2vh;
+    font-size: 2rem;
+    color: var(--blanco);
+    background-color: var(--color-transparencia);
+}
+form{
+    color: var(--blanco);
+    text-align: left;
+    padding: 30%;
+    padding-top: 10%;
+}
+input{
+    width: 105%;
+}
+footer{
+    background-color: var(--color-opuesto-primario);
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    color: var(--blanco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (min-width: 576px) {
+    
+}
+
+@media (min-width: 768px) {
+}
+/* Media queries lg */
+
+@media (min-width: 992px) {
+}
+/* Media queries xl */
+
+@media (min-width: 1200px) {
+
+}

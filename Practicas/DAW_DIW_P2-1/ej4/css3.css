@@ -1,3 +1,7 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
 /* Estilo general para todos los divs */
 div {
     border: none; /* Sin bordes por defecto */
@@ -7,18 +11,25 @@ div {
 
 /* Contenedor principal */
 #contenedor {
+    display: flex; /* Flexbox para centrar el contenido */
+    flex-wrap: wrap; /* Para que se adapte a la pantalla */
+    justify-content: center; /* Para centrar el contenido */
+    align-items: center; /* Para centrar el contenido verticalmente */
+    height: 100vh;
     width: 100%; /* Ancho relativo */
-    height: 1080px; /* Altura del contenedor como un porcentaje de la vista */
 }
 #cuerpo{
+    display: flex;
     width: 100%;
-    height: 90%;
-    margin: 0 auto;
-    padding: 0;
+    height: 100vh;
 }
 
 /* Header */
 #header {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 100%;
     background-color: #9c1717; /* Color de fondo para el header */
     height: 5%; /* Altura del header como un porcentaje de la vista */
 }
@@ -33,8 +44,14 @@ div {
 
 /* Aside: barra lateral izquierda */
 #aside {
-    float: left; /* Permite que flote a la izquierda */
-    width: 20%; /* Ancho relativo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 2%;
+
+     /* Permite que flote a la izquierda */
+    width: 18%; /* Ancho relativo */
     height: 100%; /* Altura del aside como un porcentaje de la vista */
     background-color: #179c91; /* Color de fondo para el aside */
 }
@@ -47,10 +64,13 @@ div {
 
 /* Main: área principal de contenido */
 #main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     border: none; /* Sin bordes por defecto */
     padding: 0; /* Sin padding por defecto */
     margin: 0; /* Centrar el main */
-    float: left; /* Permite que flote a la izquierda */
     width: 80%; /* Ancho relativo */
     height: 100%; /* Altura del main como un porcentaje de la vista */
     background-color: #9c1795; /* Color de fondo para el main */
@@ -58,6 +78,10 @@ div {
 
 
 #contenido1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
     border: 4px solid red; /* Bordes rojos para el contenido */
     width: 96%; /* Ancho relativo */
     height: 50%; /* Altura del contenido como un porcentaje de la vista */
@@ -67,9 +91,12 @@ div {
 
 /* Texto dentro de contenido (1) */
 #texto1, #texto2{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
     border: 4px solid blue; /* Bordes azules para los textos */
     height: 90%; /* Altura fija para los textos */
-    margin: 1%; /* Margen inferior para separación */
+
     width: 46%;
     float: left; /* Permite que floten a la izquierda */
 }
@@ -77,6 +104,10 @@ div {
 
 
 #contenido2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
     border: 4px solid red; /* Bordes rojos para el contenido */
     width: 96%; /* Ancho relativo */
     height: 45%; /* Altura del contenido como un porcentaje de la vista */
@@ -85,17 +116,25 @@ div {
 }
 
 #texto3, #texto4, #texto5 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     border: 4px solid blue; /* Bordes azules para los textos */
-    height: 85%; /* Altura fija para los textos */
-    margin: 1%; /* Margen inferior para separación */
+   height: 90%; /* Altura fija para los textos */   
     width: 30%;
     float: left; /* Permite que floten a la izquierda */
 }
 
 /* Footer */
 #footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     text-align: center;
-    clear: both; /* Limpia los floats para que no se superpongan */
+    width: 100%;
+
     height: 5%; /* Altura del footer como un porcentaje de la vista */
     background-color: yellow; /* Color de fondo para el footer */
 }
