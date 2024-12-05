@@ -1,326 +1,412 @@
+/* Variables globales */
 :root {
-    --fuente-principal: 'Pacifico';
-    --fuente-alternativa: sans-serif;
-    --tam-fuente-xs: 12px;
-    --tam-fuente-sm: 13px;
-    --tam-fuente-md: 15px;
-    --tam-fuente-lg: 17px;
-    --tam-fuente-xl: 17px;
-    --tam-max-contenedor-x: 1200px;
-    --tam-alto-encabezado-xs: 8vh;
-    --negro: #000;
-    --blanco: #FFF;
-    --fondo-encabezado: #B8D2F4;
-    --fondo-menu: var(--blanco);
-    --fondo-todo: var(--fondo-encabezado);
-    --color-texto: #517104;
-    --color-titulos-claro: #2CDA1C;
-    --color-titulos-oscuro: #1F411C;
-    --color-primario: #517104;
-    --color-secundario: #83A705;
-    --color-opuesto-primario: #894B26;
-    --color-opuesto-secundario: #F58A03;
-    --color-enlace: var(--color-opuesto-primario);
-    --color-enlace-hover: var(--color-opuesto-secundario);
-    --color-transparencia: rgba(0, 0, 0, 0.5);
+    --fuente-principal: 'Pacifico'; /* Fuente principal utilizada en todo el sitio */
+    --fuente-alternativa: sans-serif; /* Fuente secundaria en caso de que la principal no esté disponible */
+    --tam-fuente-xs: 12px; /* Tamaño de fuente extra pequeña */
+    --tam-fuente-sm: 13px; /* Tamaño de fuente pequeña */
+    --tam-fuente-md: 15px; /* Tamaño de fuente mediana */
+    --tam-fuente-lg: 17px; /* Tamaño de fuente grande */
+    --tam-fuente-xl: 17px; /* Tamaño de fuente extra grande */
+    --tam-max-contenedor-x: 1200px; /* Ancho máximo para contenedores principales */
+    --tam-alto-encabezado-xs: 8vh; /* Altura del encabezado en pantallas pequeñas */
+    --negro: #000; /* Color negro */
+    --blanco: #FFF; /* Color blanco */
+    --fondo-encabezado: #B8D2F4; /* Fondo del encabezado */
+    --fondo-menu: var(--blanco); /* Fondo del menú */
+    --fondo-todo: var(--fondo-encabezado); /* Fondo general del sitio */
+    --color-texto: #517104; /* Color principal del texto */
+    --color-titulos-claro: #2CDA1C; /* Color para los títulos claros */
+    --color-titulos-oscuro: #1F411C; /* Color para los títulos oscuros */
+    --color-primario: #517104; /* Color primario usado en botones, enlaces, etc. */
+    --color-secundario: #83A705; /* Color secundario */
+    --color-opuesto-primario: #894B26; /* Color opuesto al primario */
+    --color-opuesto-secundario: #F58A03; /* Color opuesto al secundario */
+    --color-enlace: var(--color-opuesto-primario); /* Color de enlaces */
+    --color-enlace-hover: var(--color-opuesto-secundario); /* Color de enlaces al pasar el ratón */
+    --color-transparencia: rgba(0, 0, 0, 0.5); /* Color con transparencia */
 }
 
+/* Estilos básicos de la página */
 html {
-    font-family: var(--fuente-principal), var(--fuente-alternativa);
-    font-size: var(--tam-fuente-xs);
-    background-color: var(--fondo-todo);
-    color: var(--color-texto);
+    font-family: var(--fuente-principal), var(--fuente-alternativa); /* Definir las fuentes */
+    font-size: var(--tam-fuente-xs); /* Establecer tamaño de fuente base */
+    background-color: var(--fondo-todo); /* Color de fondo general */
+    color: var(--color-texto); /* Color de texto */
 }
 
+/* Eliminar márgenes y rellenos predeterminados */
 *,
 :after,
 :before {
     padding: 0;
-    margin: 0
+    margin: 0;
 }
+
+/* Deshabilitar el desbordamiento horizontal */
 body {
     overflow-x: hidden;
 }
-#inicio,#nosotros,#contacto{
-    width: 100%;
-    height: 100vh;
-}
-header{
-    width: 100%;
-    height: var(--tam-alto-encabezado-xs);
-    background-color: var(--fondo-encabezado);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-#logo{
-    width: 20%;
-    height: 100%;   
-    background-image: url("../img/house-158939.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-#menu{
-    width: 100%;
-    height: 32vh;
-    display: inline-block;
-    box-sizing: border-box;
-    
-}
-#menu li{
-    list-style: none;
-    background-color: var(--blanco);
-    text-align: center;
-    height: 8vh;
-    padding: 3vh;
-    box-sizing: border-box;
-    border-bottom: 1px solid var(--color-opuesto-primario);
 
-}
-#menu li:last-child{
-    border-bottom: 0px;
-}
-#menu a{
-    text-decoration: none;
-    color: var(--color-opuesto-primario);
-    font-size: var(--tam-fuente-sx);
-    box-sizing: border-box;
-
-}
-#imagen1{
-    background-image: url("../img/casa-bosque-xs.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 64vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-
-}
-#mensaje{
-    color: var(--color-titulos-claro);
-    font-size: var(--tam-fuente-sx);
-    width: 60%;
-    height: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid var(--color-titulos-claro);
-    background-color: var(--color-transparencia);
-    border-radius: 15px;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.5rem;
-    
+/* Estilos específicos para secciones */
+#inicio, #nosotros, #contacto {
+    width: 100%; /* Ancho completo */
+    height: 100vh; /* Altura completa de la ventana */
 }
 
-#sobreNosotros{
-    background-image: url("../img/texture-1674066_640.jpg");
-    height: 80vh;
-    padding: 2vh;
+/* Estilo para el encabezado */
+header {
+    padding-top: 1vh; /* Espaciado superior */
+    width: 100%; /* Ancho completo */
+    height: var(--tam-alto-encabezado-xs); /* Altura ajustada desde la variable */
+    background-color: var(--fondo-encabezado); /* Color de fondo */
+    display: flex; /* Usamos flexbox para el layout */
+    justify-content: flex-start; /* Alineación a la izquierda */
+    align-items: center; /* Centrado vertical */
 }
-#sobreNosotros h2{
-    color: var(--color-titulos-oscuro);
-    text-align: center;
-    font-size: 3rem;
-}
-#imgSobre{
-    background-image: url("../img/casa-cielo-xs.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 40vh;
-    width: 80%;
-    box-sizing: border-box;
-    margin: 5.5vh;
-    border: 1px solid var(--negro);
-    border-radius: 15px;
 
+/* Estilo para el logo */
+#logo {
+    width: 20%; /* El logo ocupa el 20% del ancho */
+    height: 100%; /* Altura completa */
+    background-image: url("../img/house-158939.svg"); /* Imagen de fondo */
+    background-repeat: no-repeat; /* No repetir imagen */
+    background-position: center; /* Centrar la imagen */
+    background-size: cover; /* Asegura que la imagen cubra el espacio */
 }
-#modelos{
-    background-color: var(--blanco);
+
+/* Estilos para el menú */
+#menu {
+    width: 100%; /* Ancho completo */
+    height: 32vh; /* Altura relativa */
+    display: inline-block; /* Disposición en línea de los elementos */
+    box-sizing: border-box; /* Incluir borde en los cálculos de tamaño */
 }
-#modelos h2{
-    text-align: center;
-    font-size: 3rem;
+
+#menu li {
+    list-style: none; /* Quitar puntos de las listas */
+    background-color: var(--blanco); /* Fondo blanco */
+    text-align: center; /* Alineación de texto en el centro */
+    height: 11vh; /* Altura de los elementos del menú */
+    padding: 3vh; /* Espaciado interno */
+    box-sizing: border-box; /* Incluir borde en los cálculos de tamaño */
+    border-bottom: 1px solid var(--color-opuesto-primario); /* Línea divisoria */
 }
-#modelos h3{
-    text-align: center;
-    font-size: 2rem;
+
+#menu li:last-child {
+    border-bottom: 0px; /* Eliminar borde en el último elemento */
 }
-#modelos p{
-    padding: 3vh;
+
+#menu a {
+    text-decoration: none; /* Eliminar subrayado */
+    color: var(--color-opuesto-primario); /* Color del enlace */
+    font-size: 2rem; /* Tamaño de fuente */
+    box-sizing: border-box; /* Incluir borde en los cálculos de tamaño */
 }
-#imgModelo{
+
+/* Estilo para las secciones de imagen */
+#imagen1 {
+    background-image: url("../img/casa-bosque-xs.jpg"); /* Imagen de fondo */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    background-position: center; /* Centrar la imagen */
+    background-size: cover; /* Asegura que la imagen cubra el espacio */
+    height: 64vh; /* Altura relativa */
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+}
+
+#mensaje {
+    color: var(--color-titulos-claro); /* Color del texto */
+    font-size: var(--tam-fuente-sx); /* Tamaño de fuente ajustado */
+    width: 60%; /* Ancho del mensaje */
+    height: 60%; /* Altura del mensaje */
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    border: 1px solid var(--color-titulos-claro); /* Borde del mensaje */
+    background-color: var(--color-transparencia); /* Fondo con transparencia */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 10px; /* Relleno interno */
+    text-align: center; /* Alineación de texto al centro */
+    font-size: 1.5rem; /* Tamaño de fuente del mensaje */
+}
+
+/* Estilos para la sección sobre nosotros */
+#sobreNosotros {
+    background-image: url("../img/texture-1674066_640.jpg"); /* Imagen de fondo */
+    height: 80vh; /* Altura de la sección */
+    padding: 2vh; /* Relleno interno */
+}
+
+#sobreNosotros h2 {
+    color: var(--color-primario); /* Color de los títulos */
+    text-align: center; /* Alineación del texto */
+    font-size: 3rem; /* Tamaño de fuente para los títulos */
+}
+
+/* Estilo para las imágenes de la sección "Sobre Nosotros" */
+#imgSobre {
+    background-image: url("../img/casa-cielo-xs.jpg"); /* Imagen de fondo */
+    background-repeat: no-repeat; /* No repetir imagen */
+    background-position: center; /* Centrar la imagen */
+    background-size: cover; /* Asegura que la imagen cubra el espacio */
+    height: 40vh; /* Altura ajustada */
+    width: 80%; /* Ancho relativo */
+    box-sizing: border-box; /* Incluir borde en los cálculos de tamaño */
+    margin: 5.5vh; /* Margen alrededor */
+    margin-left: 10%; /* Margen izquierdo */
+    border: 1px solid var(--negro); /* Borde negro */
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+/* Sección de modelos */
+#modelos {
+    background-color: var(--blanco); /* Fondo blanco */
+}
+
+#modelos h2 {
+    text-align: center; /* Alineación centrada */
+    font-size: 3rem; /* Tamaño de fuente */
+    padding: 2vh; /* Relleno interno */
+}
+
+#modelos h3 {
+    text-align: center; /* Alineación centrada */
+    font-size: 2rem; /* Tamaño de fuente */
+}
+
+#modelos p {
+    padding: 3vh; /* Relleno interno */
+}
+
+/* Estilo para las imágenes de los modelos */
+#imgModelo, #imgCasaGran, #imgLago {
+    background-repeat: no-repeat; /* No repetir imagen */
+    background-position: center; /* Centrar la imagen */
+    background-size: cover; /* Asegura que la imagen cubra el espacio */
+    width: 100%; /* Ancho completo */
+    height: 30vh; /* Altura ajustada */
+}
+/*Imagenes de los modelos*/
+#imgModelo {
     background-image: url("../img/casa-basica-xs.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 25vh;
-    margin-bottom: 2vh;
 }
-#imgCasaGran{
+#imgCasaGran {
     background-image: url("../img/casa-grande-xs.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 25vh;
-    margin-bottom: 2vh;
 }
-#imgLago{
+#imgLago {
     background-image: url("../img/casa-lago-xs.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 25vh;
 }
-#galeria{
-    background-image: url("../img/texture-1674066_640.jpg");
-    width: 100%;
-    height: 200vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+
+/* Estilo para la galería de imágenes */
+#galeria {
+    background-image: url("../img/texture-1674066_640.jpg"); /* Imagen de fondo */
+    width: 100%; /* Ancho completo */
+    height: 205vh; /* Altura ajustada */
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Disposición en columna */
+    align-items: center; /* Alineación centrada */
 }
-#galeria h2{
-    text-align: center;
-    font-size: 3rem;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+
+#galeria h2 {
+    text-align: center; /* Alineación centrada */
+    font-size: 3rem; /* Tamaño de fuente */
+    margin-top: 1vh; /* Margen superior */
+    margin-bottom: 1vh; /* Margen inferior */
 }
+
+/* Estilo para las imágenes de la galería */
+#imgGal1, #imgGal2, #imgGal3, #imgGal4, #imgGal5, #imgGal6 {
+    margin-top: 1vh; /* Margen superior */
+    margin-bottom: 1vh; /* Margen inferior */
+    width: 90%; /* Ancho ajustado */
+    height: 30vh; /* Altura ajustada */
+    background-repeat: no-repeat; /* No repetir imagen */
+    background-position: center; /* Centrar la imagen */
+    background-size: cover; /* Asegura que la imagen cubra el espacio */
+    border-radius: 15px; /* Bordes redondeados */
+    border: 1px solid var(--negro); /* Borde negro */
+}
+/*Fondos de la imagenes de galeria*/
 #imgGal1{
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    width: 90%;
-    height: 30vh;
-    background-image: url(../img/alone-1867464-xs.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 15px;
-    border: 1px solid var(--negro);
+    background-image: url("../img/alone-1867464-xs.jpg");
 }
 #imgGal2{
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    width: 90%;
-    height: 30vh;
-    background-image: url(../img/architecture-1836070-xs.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 15px;
-    border: 1px solid var(--negro);
+    background-image: url("../img/architecture-1836070-xs.jpg");
 }
 #imgGal3{
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    width: 90%;
-    height: 30vh;
-    background-image: url(../img/autumn-1748644-xs.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 15px;
-    border: 1px solid var(--negro);
+    background-image: url("../img/autumn-1748644-xs.jpg");
 }
 #imgGal4{
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    width: 90%;
-    height: 30vh;
-    background-image: url(../img/apartment-3564955-xs.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 15px;
-    border: 1px solid var(--negro);
+    background-image: url("../img/apartment-3564955-xs.jpg");
 }
 #imgGal5{
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    width: 90%;
-    height: 30vh;
-    background-image: url(../img/country-house-540796-xs.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 15px;
-    border: 1px solid var(--negro);
+    background-image: url("../img/country-house-540796-xs.jpg");
 }
 #imgGal6{
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    width: 90%;
-    height: 30vh;
-    background-image: url(../img/large-home-389271-xs.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 15px;
-    border: 1px solid var(--negro);
+    background-image: url("../img/large-home-389271-xs.jpg");
 }
-#escribenos{
-    background-image: url(../img/contacto-xs.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    box-sizing: border-box;
+
+
+/* Estilos para la sección de contacto */
+#escribenos {
+    background-image: url(../img/contacto-xs.jpg); /* Imagen de fondo */
+    background-repeat: no-repeat; /* No repetir imagen */
+    background-position: center; /* Centrar la imagen */
+    background-size: cover; /* Asegura que la imagen cubra el espacio */
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Disposición en columna */
+    width: 100%; /* Ancho completo */
+    height: 90vh; /* Altura ajustada */
+    text-align: center; /* Alineación centrada */
+    box-sizing: border-box; /* Incluir borde en los cálculos de tamaño */
 }
-#escribenos h2{
-    color: var(--color-opuesto-primario);
-    margin: 2vh;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    font-size: 3rem;
+
+#escribenos h2 {
+    color: var(--color-opuesto-primario); /* Color del texto */
+    margin: 2vh; /* Margen */
+    padding-top: 5vh; /* Relleno superior */
+    padding-bottom: 5vh; /* Relleno inferior */
+    font-size: 3rem; /* Tamaño de fuente */
 }
-#divForm{
-    width: 80%;
-    height: 70vh;
-    border: 1px solid var(--color-transparencia);
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    padding-top: 2vh;
-    font-size: 2rem;
-    color: var(--blanco);
-    background-color: var(--color-transparencia);
+
+/* Estilos del formulario de contacto */
+#divForm {
+    width: 80%; /* Ancho ajustado */
+    height: 60vh; /* Altura ajustada */
+    border: 1px solid var(--color-transparencia); /* Borde */
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Disposición en columna */
+    align-self: center; /* Alineación centrada */
+    padding-top: 2vh; /* Relleno superior */
+    font-size: 2rem; /* Tamaño de fuente */
+    color: var(--blanco); /* Color del texto */
+    background-color: var(--color-transparencia); /* Fondo transparente */
+    border-radius: 15px; /* Bordes redondeados */
 }
-form{
-    color: var(--blanco);
-    text-align: left;
-    padding: 30%;
-    padding-top: 10%;
+
+form {
+    color: var(--blanco); /* Color del texto */
+    text-align: left; /* Alineación de texto a la izquierda */
+    width: 50%; /* Ancho del formulario */
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Disposición en columna */
+    padding-top: 7%; /* Relleno superior */
+    align-self: center; /* Alineación centrada */
 }
-input{
-    width: 105%;
+
+input {
+    width: 100%; /* Ancho completo */
+    height: 2vh; /* Altura ajustada */
+    margin: 0; /* Sin margen */
 }
-footer{
-    background-color: var(--color-opuesto-primario);
-    width: 100%;
-    height: 10vh;
-    text-align: center;
-    color: var(--blanco);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+textarea {
+    width: 105%; /* Ancho ajustado */
+    height: 15vh; /* Altura ajustada */
+    resize: none; /* Sin posibilidad de redimensionar */
+    margin-bottom: 1%; /* Margen inferior */
 }
+
+input {
+    width: 105%; /* Ancho ajustado */
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: var(--color-opuesto-primario); /* Color de fondo */
+    width: 100%; /* Ancho completo */
+    height: 10vh; /* Altura ajustada */
+    text-align: center; /* Alineación centrada */
+    color: var(--blanco); /* Color del texto */
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Alineación horizontal */
+    align-items: center; /* Alineación vertical */
+}
+
+
 
 
 @media (min-width: 576px) {
-    
+
+    /* Estilo para el mensaje, cambia el tamaño de la fuente en pantallas medianas */
+    #mensaje {
+        font-size: 2rem; /* Aumenta el tamaño de la fuente en pantallas medianas */
+    }
+
+    /* Estilo para la sección de sobre nosotros */
+    #sobreNosotros {
+        padding: 5vh; /* Aumenta el relleno en pantallas medianas */
+        height: 90vh;
+    }
+
+    /* Estilo para el título dentro de la sección sobre nosotros */
+    #sobreNosotros h2 {
+        font-size: 3.5rem; /* Aumenta el tamaño de la fuente del título */
+    }
+
+    /* Estilo para el párrafo dentro de la sección sobre nosotros */
+    #sobreNosotros p {
+        font-size: 1.4rem; /* Ajusta el tamaño de la fuente del párrafo */
+    }
+
+    /* Estilo para la imagen dentro de la sección sobre nosotros */
+    #imgSobre {
+        margin-top: 2%; /* Añade margen superior en pantallas medianas */
+        height: 40vh; /* Ajusta la altura de la imagen */
+    }
+
+    /* Estilo para la sección de modelos */
+    #modelos h2 {
+        font-size: 3.5rem; /* Aumenta el tamaño de la fuente del título */
+    }
+
+    #modelos h3 {
+        font-size: 3rem; /* Aumenta el tamaño de la fuente del subtítulo */
+    }
+
+    /* Estilo para el párrafo dentro de la sección de modelos */
+    #modelos p {
+        padding: 3vh; /* Añade relleno alrededor del párrafo */
+        font-size: 1.8rem; /* Aumenta el tamaño de la fuente */
+    }
+
+    /* Estilo para las imágenes dentro de la sección de modelos */
+    #imgModelo, #imgLago, #imgCasaGran {
+        height: 40vh; /* Ajusta la altura de las imágenes */
+    }
+
+    /* Estilo para la galería */
+    #galeria {
+        height: 265vh; /* Aumenta la altura de la galería */
+    }
+    #imgGal1, #imgGal2, #imgGal3, #imgGal4, #imgGal5, #imgGal6{
+        height: 40vh; /* Ajusta la altura de las imágenes */
+    }
+
+    /* Estilo para la sección de contáctanos */
+    #escribenos h2 {
+        font-size: 3rem; /* Aumenta el tamaño de la fuente del título */
+    }
+
+    /* Ajustes para el formulario */
+    #divForm {
+        height: 60vh; /* Ajusta la altura del contenedor del formulario */
+    }
+
+    /* Estilo para el formulario en sí */
+    form {
+        width: 75%; /* Aumenta el ancho del formulario */
+    }
+
+    /* Estilo para el pie de página */
+    footer {
+        font-size: 2.5rem; /* Aumenta el tamaño de la fuente del pie de página */
+    }
 }
+
+
 
 @media (min-width: 768px) {
 }

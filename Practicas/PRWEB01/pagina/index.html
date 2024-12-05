@@ -82,44 +82,50 @@
           <div id="imgGal6"></div>
      </section>
      <section id="escribenos">
-          <div><h2>¡¡Escribenos!!</h2></div>
+          <div>
+               <h2>¡¡Escribenos!!</h2>
+          </div>
           <div id="divForm">
                <h3><strong>Casas en el Bosque</strong></h3>
                <h5>casas@enelbosque.com</h5>
                <h5>Telf +(123) 456 7890</h5>
                <form id="form" method="post" action="">
-                   
-                         <label for="nombre">Nombre:</label>
-                         <br>
-                         <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-                         <br>
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
                     <label for="correo">Email</label>
-                    <br>
                     <input type="email" name="correo" id="correo" placeholder="Correo">
-                   
-                    <br>
-                         <label for="mensajeForm">Mensaje</label><br>
-                              <textarea name="mensajeForm" id="mensajeForm" cols="28" rows="10"
-                                   placeholder="Mensaje"></textarea>
-                                   <br>
+                    <label for="mensajeForm">Mensaje</label>
+                    <textarea name="mensajeForm" id="mensajeForm" cols="28" rows="10" placeholder="Mensaje"></textarea>
                     <input type="submit" value="Enviar">
                </form>
           </div>
      </section>
      <footer>Todos los derechos reservados 2023</footer>
      <script>
-               //CREAR BOTON PARA VOLVER AL INICIO DE LA PAGINA
-               const btnVolver = document.createElement("button");
-               btnVolver.style.position = "fixed";
-               btnVolver.style.top = "96vh";
-               btnVolver.style.right = "10px";
-               btnVolver.style.backgroundImage = "url('../img/arrow-24846.svg')";
-               btnVolver.style.backgroundSize = "cover";
-               btnVolver.style.padding = "10px";
-               btnVolver.onclick = function() {
-                    window.location.href = "index.html";
-                    }
-                    document.body.appendChild(btnVolver);
+          //CREAR BOTON PARA VOLVER AL INICIO DE LA PAGINA
+          const btnVolver = document.createElement("img");
+          btnVolver.style.position = "fixed";
+          btnVolver.style.top = "90vh";
+          btnVolver.style.right = "5%";
+          btnVolver.style.background = "url('../img/arrow-24846.svg')";
+          btnVolver.style.backgroundRepeat = "no-repeat";
+          btnVolver.style.padding = "10px";
+          btnVolver.style.width = "3%";
+          btnVolver.style.height = "3%";
+          btnVolver.onclick = function () {
+               window.location.href = "index.html";
+          }
+          document.body.appendChild(btnVolver);
+          //Evento que controla el scroll para hacer que aparezca el boton de volver
+          window.addEventListener("scroll", function () {
+               if (window.scrollY > 300) {
+                    btnVolver.style.display = "block";
+               } else {
+                    btnVolver.style.display = "none";
+               }
+          });
+
 
      </script>
 </body>
