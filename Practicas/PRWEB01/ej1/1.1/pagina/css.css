@@ -71,7 +71,7 @@ header {
     background-image: url("../img/house-158939.svg"); /* Imagen de fondo */
     background-repeat: no-repeat; /* No repetir imagen */
     background-position: center; /* Centrar la imagen */
-    background-size: contain; /* Asegura que la imagen cubra el espacio */
+    background-size: cover; /* Asegura que la imagen cubra el espacio */
 }
 
 /* Estilos para el menú */
@@ -330,143 +330,13 @@ footer {
 
 @media (min-width: 576px) {
 
-    /* Estilo para el mensaje, cambia el tamaño de la fuente en pantallas medianas */
-    #mensaje {
-        font-size: 1.5rem; /* Aumenta el tamaño de la fuente en pantallas medianas */
-    }
-    #imagen1 {
-        background-image: url("../img/casa-bosque-sm.jpg"); /* Imagen de fondo */
-    }
-
-    /* Estilo para la sección de sobre nosotros */
-    #sobreNosotros {
-        padding: 5vh; /* Aumenta el relleno en pantallas medianas */
-        height: 90vh;
-    }
-
-    /* Estilo para el título dentro de la sección sobre nosotros */
-    #sobreNosotros h2 {
-        font-size: 3rem; /* Aumenta el tamaño de la fuente del título */
-    }
-
-    /* Estilo para el párrafo dentro de la sección sobre nosotros */
-    #sobreNosotros p {
-        font-size: 1.4rem; /* Ajusta el tamaño de la fuente del párrafo */
-    }
-
-    /* Estilo para la imagen dentro de la sección sobre nosotros */
-    #imgSobre {
-        margin-top: 2%; /* Añade margen superior en pantallas medianas */
-        height: 40vh; /* Ajusta la altura de la imagen */
-    }
-
-    /* Estilo para la sección de modelos */
-    #modelos h2 {
-        font-size: 3.5rem; /* Aumenta el tamaño de la fuente del título */
-    }
-
-    #modelos h3 {
-        font-size: 3rem; /* Aumenta el tamaño de la fuente del subtítulo */
-    }
-
-    /* Estilo para el párrafo dentro de la sección de modelos */
-    #modelos p {
-        padding: 3vh; /* Añade relleno alrededor del párrafo */
-        font-size: 1.8rem; /* Aumenta el tamaño de la fuente */
-    }
-
-    /* Estilo para las imágenes dentro de la sección de modelos */
-    #imgModelo, #imgLago, #imgCasaGran {
-        height: 40vh; /* Ajusta la altura de las imágenes */
-    }
-
-    /* Estilo para la galería */
-    #galeria {
-        height: 265vh; /* Aumenta la altura de la galería */
-    }
-    #imgGal1, #imgGal2, #imgGal3, #imgGal4, #imgGal5, #imgGal6{
-        height: 40vh; /* Ajusta la altura de las imágenes */
-    }
-
-    /* Estilo para la sección de contáctanos */
-    #escribenos h2 {
-        font-size: 3rem; /* Aumenta el tamaño de la fuente del título */
-    }
-
-    /* Ajustes para el formulario */
-    #divForm {
-        height: 60vh; /* Ajusta la altura del contenedor del formulario */
-    }
-
-    /* Estilo para el formulario en sí */
-    form {
-        width: 75%; /* Aumenta el ancho del formulario */
-    }
-
-    /* Estilo para el pie de página */
-    footer {
-        font-size: 2.5rem; /* Aumenta el tamaño de la fuente del pie de página */
-    }
+   
 }
 
 
 
 @media (min-width: 768px) {
-    html {
-        font-size: var(--tam-fuente-md); /* Establecer tamaño de fuente base */
-    }
-    header{
-        padding: 0;
-    }
-    #imagen1 {
-        background-image: url("../img/casa-bosque-md.jpg"); /* Imagen de fondo */
-    }
-    #sobreNosotros {
-        padding: 8vh; /* Aumenta el relleno en pantallas medianas */
-        height: 100vh;
-    }
-    #imgSobre{
-        width: 100%;
-        margin: 0;
-        margin-top: 2vh;
-        background-image: url("../img/casa-cielo-md.jpg"); /* Imagen de fondo */
-    }
-    /* Estilo para las imágenes dentro de la sección de modelos */
-    #imgModelo, #imgLago, #imgCasaGran {
-        height: 50vh; /* Ajusta la altura de las imágenes */
-    }
-
-    /* Estilo para la galería */
-    #galeria {
-        height: 330vh; /* Aumenta la altura de la galería */
-    }
-    #imgGal1, #imgGal2, #imgGal3, #imgGal4, #imgGal5, #imgGal6{
-        height: 50vh; /* Ajusta la altura de las imágenes */
-    }
-    #modelos p {
-        padding: 5vh; /* Añade relleno alrededor del párrafo */
-        font-size: 1.8rem; /* Aumenta el tamaño de la fuente */
-    }
-    #escribenos{
-        height: 110vh;
-    }
-
-    /* Ajustes para el formulario */
-    #divForm {
-        height: 70vh; /* Ajusta la altura del contenedor del formulario */
-    }
-
-    /* Estilo para el formulario en sí */
-    form {
-        width: 75%; /* Aumenta el ancho del formulario */
-    }
-
-    /* Estilo para el pie de página */
-    footer {
-        font-size: 2rem; /* Aumenta el tamaño de la fuente del pie de página */
-    }
 }
-
 /* Media queries lg */
 
 @media (min-width: 992px) {

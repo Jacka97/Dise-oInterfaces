@@ -71,7 +71,7 @@ header {
     background-image: url("../img/house-158939.svg"); /* Imagen de fondo */
     background-repeat: no-repeat; /* No repetir imagen */
     background-position: center; /* Centrar la imagen */
-    background-size: contain; /* Asegura que la imagen cubra el espacio */
+    background-size: cover; /* Asegura que la imagen cubra el espacio */
 }
 
 /* Estilos para el menú */
@@ -332,7 +332,7 @@ footer {
 
     /* Estilo para el mensaje, cambia el tamaño de la fuente en pantallas medianas */
     #mensaje {
-        font-size: 1.5rem; /* Aumenta el tamaño de la fuente en pantallas medianas */
+        font-size: 2rem; /* Aumenta el tamaño de la fuente en pantallas medianas */
     }
     #imagen1 {
         background-image: url("../img/casa-bosque-sm.jpg"); /* Imagen de fondo */
@@ -346,7 +346,7 @@ footer {
 
     /* Estilo para el título dentro de la sección sobre nosotros */
     #sobreNosotros h2 {
-        font-size: 3rem; /* Aumenta el tamaño de la fuente del título */
+        font-size: 3.5rem; /* Aumenta el tamaño de la fuente del título */
     }
 
     /* Estilo para el párrafo dentro de la sección sobre nosotros */
@@ -412,61 +412,7 @@ footer {
 
 
 @media (min-width: 768px) {
-    html {
-        font-size: var(--tam-fuente-md); /* Establecer tamaño de fuente base */
-    }
-    header{
-        padding: 0;
-    }
-    #imagen1 {
-        background-image: url("../img/casa-bosque-md.jpg"); /* Imagen de fondo */
-    }
-    #sobreNosotros {
-        padding: 8vh; /* Aumenta el relleno en pantallas medianas */
-        height: 100vh;
-    }
-    #imgSobre{
-        width: 100%;
-        margin: 0;
-        margin-top: 2vh;
-        background-image: url("../img/casa-cielo-md.jpg"); /* Imagen de fondo */
-    }
-    /* Estilo para las imágenes dentro de la sección de modelos */
-    #imgModelo, #imgLago, #imgCasaGran {
-        height: 50vh; /* Ajusta la altura de las imágenes */
-    }
-
-    /* Estilo para la galería */
-    #galeria {
-        height: 330vh; /* Aumenta la altura de la galería */
-    }
-    #imgGal1, #imgGal2, #imgGal3, #imgGal4, #imgGal5, #imgGal6{
-        height: 50vh; /* Ajusta la altura de las imágenes */
-    }
-    #modelos p {
-        padding: 5vh; /* Añade relleno alrededor del párrafo */
-        font-size: 1.8rem; /* Aumenta el tamaño de la fuente */
-    }
-    #escribenos{
-        height: 110vh;
-    }
-
-    /* Ajustes para el formulario */
-    #divForm {
-        height: 70vh; /* Ajusta la altura del contenedor del formulario */
-    }
-
-    /* Estilo para el formulario en sí */
-    form {
-        width: 75%; /* Aumenta el ancho del formulario */
-    }
-
-    /* Estilo para el pie de página */
-    footer {
-        font-size: 2rem; /* Aumenta el tamaño de la fuente del pie de página */
-    }
 }
-
 /* Media queries lg */
 
 @media (min-width: 992px) {
