@@ -55,7 +55,6 @@ body {
 
 /* Estilo para el encabezado */
 header {
-    padding-top: 1vh; /* Espaciado superior */
     width: 100%; /* Ancho completo */
     height: var(--tam-alto-encabezado-xs); /* Altura ajustada desde la variable */
     background-color: var(--fondo-encabezado); /* Color de fondo */
@@ -134,7 +133,7 @@ header {
 /* Estilos para la sección sobre nosotros */
 #sobreNosotros {
     background-image: url("../img/texture-1674066_640.jpg"); /* Imagen de fondo */
-    height: 80vh; /* Altura de la sección */
+    height: 90vh; /* Altura de la sección */
     padding: 2vh; /* Relleno interno */
 }
 
@@ -203,7 +202,7 @@ header {
 #galeria {
     background-image: url("../img/texture-1674066_640.jpg"); /* Imagen de fondo */
     width: 100%; /* Ancho completo */
-    height: 205vh; /* Altura ajustada */
+    height: 220vh; /* Altura ajustada */
     display: flex; /* Usar flexbox */
     flex-direction: column; /* Disposición en columna */
     align-items: center; /* Alineación centrada */
@@ -221,7 +220,7 @@ header {
     margin-top: 1vh; /* Margen superior */
     margin-bottom: 1vh; /* Margen inferior */
     width: 90%; /* Ancho ajustado */
-    height: 30vh; /* Altura ajustada */
+    height: 32vh; /* Altura ajustada */
     background-repeat: no-repeat; /* No repetir imagen */
     background-position: center; /* Centrar la imagen */
     background-size: cover; /* Asegura que la imagen cubra el espacio */
@@ -258,7 +257,7 @@ header {
     display: flex; /* Usar flexbox */
     flex-direction: column; /* Disposición en columna */
     width: 100%; /* Ancho completo */
-    height: 90vh; /* Altura ajustada */
+    height: 100vh; /* Altura ajustada */
     text-align: center; /* Alineación centrada */
     box-sizing: border-box; /* Incluir borde en los cálculos de tamaño */
 }
@@ -274,7 +273,7 @@ header {
 /* Estilos del formulario de contacto */
 #divForm {
     width: 80%; /* Ancho ajustado */
-    height: 60vh; /* Altura ajustada */
+    height: 70vh; /* Altura ajustada */
     border: 1px solid var(--color-transparencia); /* Borde */
     display: flex; /* Usar flexbox */
     flex-direction: column; /* Disposición en columna */
@@ -327,12 +326,14 @@ footer {
 
 
 
-
 @media (min-width: 576px) {
 
     /* Estilo para el mensaje, cambia el tamaño de la fuente en pantallas medianas */
     #mensaje {
         font-size: 2rem; /* Aumenta el tamaño de la fuente en pantallas medianas */
+    }
+    header{
+        height: 10vh; /* Altura ajustada desde la variable */
     }
     #imagen1 {
         background-image: url("../img/casa-bosque-sm.jpg"); /* Imagen de fondo */
@@ -341,7 +342,7 @@ footer {
     /* Estilo para la sección de sobre nosotros */
     #sobreNosotros {
         padding: 5vh; /* Aumenta el relleno en pantallas medianas */
-        height: 90vh;
+        height: 105vh;
     }
 
     /* Estilo para el título dentro de la sección sobre nosotros */
@@ -395,7 +396,7 @@ footer {
 
     /* Ajustes para el formulario */
     #divForm {
-        height: 60vh; /* Ajusta la altura del contenedor del formulario */
+        height: 70vh; /* Ajusta la altura del contenedor del formulario */
     }
 
     /* Estilo para el formulario en sí */
@@ -405,7 +406,7 @@ footer {
 
     /* Estilo para el pie de página */
     footer {
-        font-size: 2.5rem; /* Aumenta el tamaño de la fuente del pie de página */
+        font-size: 1.2rem; /* Aumenta el tamaño de la fuente del pie de página */
     }
 }
 

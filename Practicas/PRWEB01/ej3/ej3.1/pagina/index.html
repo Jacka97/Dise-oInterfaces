@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link href="css.css" rel="stylesheet">
+     <style>
+          @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+     </style>
+</head>
+
+<body>
+     <div id="cabecera">
+     <header>
+          <div id="logo"></div>
+          <h1>Casa en el<strong> Bosque</strong></h1>
+     </header>
+     <nav id="menu">
+          <ul>
+               <li><a href="#sobreNosotros">Nosotros</a></li>
+               <li><a href="#modelos">Modelos</a></li>
+               <li><a href="#galeria">Galeria</a></li>
+               <li><a href="#escribenos">Contacto</a></li>
+          </ul>
+     </nav>
+</div>
+     <div id="imagen1">
+          <div id="mensaje">
+               <h2>Encontramos para ti la casa de tus sueños</h2>
+          </div>
+     </div>
+     <section id="sobreNosotros">
+          <h2>Sobre Nosotros</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quia ex voluptatibus earum nostrum, minus
+               dolores cupiditate nihil rerum incidunt
+               veniam aspernatur facilis amet tenetur quibusdam iure odio, voluptatem corporis.Lorem ipsum dolor sit
+               amet consectetur adipisicing elit.
+               Quaerat debitis corporis voluptatem inventore laudantium et, at aliquam tenetur praesentium non nisi
+               adipisci error est molestiae a reiciendis, unde vitae? Tempore.
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quia ex voluptatibus earum nostrum, minus
+               dolores cupiditate nihil rerum incidunt
+               veniam aspernatur facilis amet tenetur quibusdam iure odio, voluptatem corporis.Lorem ipsum dolor sit
+               amet consectetur adipisicing elit.
+               Quaerat debitis corporis voluptatem inventore laudantium et, at aliquam tenetur praesentium non nisi
+               adipisci error est molestiae a reiciendis, unde vitae? Tempore.</p>
+          <div id="imgSobre"></div>
+     </section>
+     <section id="modelos">
+          <h2>Conoce nuestros modelos</h2>
+          <div id="imgModelo"></div>
+          <h3>Casas Básicas</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quia ex voluptatibus earum nostrum,
+                    minus dolores cupiditate nihil rerum incidunt
+                    veniam aspernatur facilis amet tenetur quibusdam iure odio, voluptatem corporis.Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit.
+                    Quaerat debitis corporis voluptatem inventore laudantium et, at aliquam tenetur praesentium non nisi
+                    adipisci error est molestiae a reiciendis, unde vitae? Tempore.</p>
+               <h3>Casas Grandes</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quia ex voluptatibus earum
+                         nostrum, minus dolores cupiditate nihil rerum incidunt
+                         veniam aspernatur facilis amet tenetur quibusdam iure odio, voluptatem corporis.Lorem ipsum
+                         dolor sit amet consectetur adipisicing elit.
+                         Quaerat debitis corporis voluptatem inventore laudantium et, at aliquam tenetur praesentium non
+                         nisi adipisci error est molestiae a reiciendis, unde vitae? Tempore.</p>
+                    <div id="imgCasaGran"></div>
+                    <h3>Junto al Lago</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quia ex voluptatibus earum
+                         nostrum, minus dolores cupiditate nihil rerum incidunt
+                         veniam aspernatur facilis amet tenetur quibusdam iure odio, voluptatem corporis.Lorem ipsum
+                         dolor sit amet consectetur adipisicing elit.
+                         Quaerat debitis corporis voluptatem inventore laudantium et, at aliquam tenetur praesentium non
+                         nisi adipisci error est molestiae a reiciendis, unde vitae? Tempore.</p>
+                    <div id="imgLago"></div>
+     </section>
+     <section id="galeria">
+          <h2>Galeria</h2>
+          <div id="imgGaleria">
+          <div id="imgGal1"></div>
+          <div id="imgGal2"></div>
+          <div id="imgGal3"></div>
+          <div id="imgGal4"></div>
+          <div id="imgGal5"></div>
+          <div id="imgGal6"></div>
+     </div>
+     </section>
+     <section id="escribenos">
+          <div>
+               <h2>¡¡Escribenos!!</h2>
+          </div>
+          <div id="divForm">
+               <h3><strong>Casas en el Bosque</strong></h3>
+               <h5>casas@enelbosque.com</h5>
+               <h5>Telf +(123) 456 7890</h5>
+               <form id="form" method="post" action="">
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" placeholder="Correo">
+                    <label for="mensajeForm">Mensaje</label>
+                    <textarea name="mensajeForm" id="mensajeForm" cols="28" rows="10" placeholder="Mensaje"></textarea>
+                    <input type="submit" value="Enviar">
+               </form>
+          </div>
+     </section>
+     <footer>Todos los derechos reservados 2023</footer>
+     <script>
+          //CREAR BOTON PARA VOLVER AL INICIO DE LA PAGINA
+          const btnVolver = document.createElement("img");
+          btnVolver.style.position = "fixed";
+          btnVolver.style.top = "90vh";
+          btnVolver.style.right = "5%";
+          btnVolver.style.background = "url('../img/arrow-24846.svg')";
+          btnVolver.style.backgroundRepeat = "no-repeat";
+          btnVolver.style.padding = "10px";
+          btnVolver.style.width = "3%";
+          btnVolver.style.height = "3%";
+          btnVolver.onclick = function () {
+               window.location.href = "index.html";
+          }
+          document.body.appendChild(btnVolver);
+          //Evento que controla el scroll para hacer que aparezca el boton de volver
+          window.addEventListener("scroll", function () {
+               if (window.scrollY > 300) {
+                    btnVolver.style.display = "block";
+               } else {
+                    btnVolver.style.display = "none";
+               }
+          });
+
+
+     </script>
+</body>
+
+</html>
