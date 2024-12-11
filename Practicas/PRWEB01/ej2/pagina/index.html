@@ -12,6 +12,8 @@
 </head>
 
 <body>
+     <div id="todo">
+     <div id="cabecera">
      <header>
           <div id="logo"></div>
           <h1>Casa en el<strong> Bosque</strong></h1>
@@ -24,6 +26,7 @@
                <li><a href="#escribenos">Contacto</a></li>
           </ul>
      </nav>
+</div>
      <div id="imagen1">
           <div id="mensaje">
                <h2>Encontramos para ti la casa de tus sueños</h2>
@@ -48,38 +51,48 @@
      <section id="modelos">
           <h2>Conoce nuestros modelos</h2>
           <div id="imgModelo"></div>
-          <h3>Casas Básicas</h2>
+          <div id="modelo1">
+          <h3>Casas Básicas</h3>
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quia ex voluptatibus earum nostrum,
                     minus dolores cupiditate nihil rerum incidunt
                     veniam aspernatur facilis amet tenetur quibusdam iure odio, voluptatem corporis.Lorem ipsum dolor
                     sit amet consectetur adipisicing elit.
                     Quaerat debitis corporis voluptatem inventore laudantium et, at aliquam tenetur praesentium non nisi
                     adipisci error est molestiae a reiciendis, unde vitae? Tempore.</p>
-               <h3>Casas Grandes</h2>
+               </div>
+               <div id="modelo2">
+               <h3>Casas Grandes</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quia ex voluptatibus earum
                          nostrum, minus dolores cupiditate nihil rerum incidunt
                          veniam aspernatur facilis amet tenetur quibusdam iure odio, voluptatem corporis.Lorem ipsum
                          dolor sit amet consectetur adipisicing elit.
                          Quaerat debitis corporis voluptatem inventore laudantium et, at aliquam tenetur praesentium non
                          nisi adipisci error est molestiae a reiciendis, unde vitae? Tempore.</p>
-                    <div id="imgCasaGran"></div>
-                    <h3>Junto al Lago</h3>
+                    
+               </div>
+               <div id="imgCasaGran"></div>
+               <div id="modelo3">
+               <h3>Junto al Lago</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quia ex voluptatibus earum
                          nostrum, minus dolores cupiditate nihil rerum incidunt
                          veniam aspernatur facilis amet tenetur quibusdam iure odio, voluptatem corporis.Lorem ipsum
                          dolor sit amet consectetur adipisicing elit.
                          Quaerat debitis corporis voluptatem inventore laudantium et, at aliquam tenetur praesentium non
                          nisi adipisci error est molestiae a reiciendis, unde vitae? Tempore.</p>
-                    <div id="imgLago"></div>
+                    
+               </div>
+               <div id="imgLago"></div>
      </section>
      <section id="galeria">
           <h2>Galeria</h2>
+          <div id="imgGaleria">
           <div id="imgGal1"></div>
           <div id="imgGal2"></div>
           <div id="imgGal3"></div>
           <div id="imgGal4"></div>
           <div id="imgGal5"></div>
           <div id="imgGal6"></div>
+     </div>
      </section>
      <section id="escribenos">
           <div>
@@ -104,15 +117,14 @@
      <footer>Todos los derechos reservados 2023</footer>
      <script>
           //CREAR BOTON PARA VOLVER AL INICIO DE LA PAGINA
-          const btnVolver = document.createElement("img");
+          const btnVolver = document.createElement("div");
           btnVolver.style.position = "fixed";
           btnVolver.style.top = "90vh";
-          btnVolver.style.right = "5%";
+          btnVolver.style.right = "1%";
           btnVolver.style.background = "url('../img/arrow-24846.svg')";
           btnVolver.style.backgroundRepeat = "no-repeat";
-          btnVolver.style.padding = "10px";
-          btnVolver.style.width = "3%";
-          btnVolver.style.height = "3%";
+          btnVolver.style.width = "4%";
+          btnVolver.style.height = "4%";
           btnVolver.onclick = function () {
                window.location.href = "index.html";
           }
@@ -128,6 +140,7 @@
 
 
      </script>
+     </div>
 </body>
 
 </html>

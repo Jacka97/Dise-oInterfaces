@@ -46,6 +46,9 @@ html {
 body {
     overflow-x: hidden;
 }
+#todo{
+    background-color: var(--blanco);
+}
 
 /* Estilos específicos para secciones */
 #inicio, #nosotros, #contacto {
@@ -488,7 +491,7 @@ footer {
     body{
         font-size: var(--tam-fuente-lg);
     }
-  #cabecera{
+  #cabecera{ /*Usamos flex y nowrap para que se posicionen en la misma linea*/
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
@@ -501,7 +504,7 @@ footer {
   }
   #menu{
     display: flex;
-    width: 20%;
+    width: 40%;
   }
   #menu ul{
     display: flex;
@@ -530,20 +533,113 @@ footer {
 }
 #imgGal1, #imgGal2, #imgGal3, #imgGal4, #imgGal5, #imgGal6{
     width: 40%;
-    box-sizing: border-box;
+    height: 35vh;
+    box-sizing: border-box; /*Evita el desbordamiento*/
 }
 #galeria{
-    height: 180vh;
+    height: 130vh;
 }
 #escribenos{
-    height:150vh;
+    height:130vh;
 }
 #divForm{
-    height: 110vh;
+    height: 90vh;
 }
 }
 /* Media queries xl */
 
 @media (min-width: 1200px) {
+    #todo{
+        width: 1100px;
+        margin: 0 auto;
+        background-color: var(--blanco);
+    }
+    #modelo{
+        padding-left: 50px;
+    }
+    #modelo h2{
+        font-size: 20px;
+    }
+    #imgModelo {
+        background-image: url("../img/casa-basica-xl.jpg");
+        width: 80%;
+        position: relative;
+        left: 18%;
+    }
+    #imgCasaGran {
+        background-image: url("../img/casa-grande-xl.jpg");
+        position: relative;
+        width: 80%;
+        left: 2%;
+        bottom: 300px;
+    }
+    #imgLago {
+        background-image: url("../img/casa-lago-xl.jpg");
+        position: relative;
+        width: 80%;
+        bottom: 450px;
+        left:18%;
+    }
+    #modelo1{
+        position: relative;
+        bottom: 500px;
+        width: 60%;
+        left: 2%;
+        background-color: #FFF;
 
+    }
+    #modelo1 h3{
+        font-size: 18px;
+    }
+    #modelo1 p{
+        padding: 1%;
+        font-size: 14px;
+    }
+    #modelo2{
+        position: relative;
+        bottom: 140px;
+        width: 60%;
+        left: 40%;
+        z-index: +1;
+        background-color: #FFF;
+        padding-left: 3%;
+        padding-right: 3%;
+        box-sizing: border-box;
+
+    }
+    #modelo2 h3{
+        font-size: 18px;
+    }
+    #modelo2 p{
+        padding: 1%;
+        font-size: 14px;
+    }
+    #modelo3{
+        position: relative;
+        bottom: 280px;
+        width: 50%;
+        z-index: +1;
+        background-color: #FFF;
+        padding-left: 3%;
+        padding-right: 3%;
+        box-sizing: border-box;
+
+    }
+    #modelo3 h3{
+        font-size: 18px;
+    }
+    #modelo3 p{
+        padding: 1%;
+        font-size: 14px;
+    }
+    #modelos{
+        height: 240vh;
+    }
+    #imgGal1, #imgGal2, #imgGal3, #imgGal4, #imgGal5, #imgGal6{
+        height: 50vh;
+        width: 45%;
+    }
+    #galeria{
+        height: 170vh;
+    }
 }

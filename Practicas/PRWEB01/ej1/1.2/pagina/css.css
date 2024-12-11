@@ -46,6 +46,9 @@ html {
 body {
     overflow-x: hidden;
 }
+#todo{
+    background-color: var(--blanco);
+}
 
 /* Estilos específicos para secciones */
 #inicio, #nosotros, #contacto {
@@ -133,7 +136,7 @@ header {
 /* Estilos para la sección sobre nosotros */
 #sobreNosotros {
     background-image: url("../img/texture-1674066_640.jpg"); /* Imagen de fondo */
-    height: 90vh; /* Altura de la sección */
+    height: 105vh; /* Altura de la sección */
     padding: 2vh; /* Relleno interno */
 }
 
@@ -149,7 +152,7 @@ header {
     background-repeat: no-repeat; /* No repetir imagen */
     background-position: center; /* Centrar la imagen */
     background-size: cover; /* Asegura que la imagen cubra el espacio */
-    height: 40vh; /* Altura ajustada */
+    height: 50%; /* Altura ajustada */
     width: 80%; /* Ancho relativo */
     box-sizing: border-box; /* Incluir borde en los cálculos de tamaño */
     margin: 5.5vh; /* Margen alrededor */
@@ -199,14 +202,14 @@ header {
 
 
 /* Estilo para la galería de imágenes */
+
 #galeria {
     background-image: url("../img/texture-1674066_640.jpg"); /* Imagen de fondo */
     width: 100%; /* Ancho completo */
     height: 220vh; /* Altura ajustada */
-    display: flex; /* Usar flexbox */
-    flex-direction: column; /* Disposición en columna */
-    align-items: center; /* Alineación centrada */
+  
 }
+
 
 #galeria h2 {
     text-align: center; /* Alineación centrada */
@@ -214,7 +217,12 @@ header {
     margin-top: 1vh; /* Margen superior */
     margin-bottom: 1vh; /* Margen inferior */
 }
-
+#imgGaleria{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 /* Estilo para las imágenes de la galería */
 #imgGal1, #imgGal2, #imgGal3, #imgGal4, #imgGal5, #imgGal6 {
     margin-top: 1vh; /* Margen superior */
@@ -226,6 +234,7 @@ header {
     background-size: cover; /* Asegura que la imagen cubra el espacio */
     border-radius: 15px; /* Bordes redondeados */
     border: 1px solid var(--negro); /* Borde negro */
+    justify-self: center;
 }
 /*Fondos de la imagenes de galeria*/
 #imgGal1{
@@ -342,7 +351,7 @@ footer {
     /* Estilo para la sección de sobre nosotros */
     #sobreNosotros {
         padding: 5vh; /* Aumenta el relleno en pantallas medianas */
-        height: 105vh;
+        height: 120vh;
     }
 
     /* Estilo para el título dentro de la sección sobre nosotros */
@@ -358,7 +367,7 @@ footer {
     /* Estilo para la imagen dentro de la sección sobre nosotros */
     #imgSobre {
         margin-top: 2%; /* Añade margen superior en pantallas medianas */
-        height: 40vh; /* Ajusta la altura de la imagen */
+        height: 45vh; /* Ajusta la altura de la imagen */
     }
 
     /* Estilo para la sección de modelos */
@@ -408,18 +417,4 @@ footer {
     footer {
         font-size: 1.2rem; /* Aumenta el tamaño de la fuente del pie de página */
     }
-}
-
-
-
-@media (min-width: 768px) {
-}
-/* Media queries lg */
-
-@media (min-width: 992px) {
-}
-/* Media queries xl */
-
-@media (min-width: 1200px) {
-
 }

@@ -46,6 +46,9 @@ html {
 body {
     overflow-x: hidden;
 }
+#todo{
+    background-color: var(--blanco);
+}
 
 /* Estilos específicos para secciones */
 #inicio, #nosotros, #contacto {
@@ -488,7 +491,7 @@ footer {
     body{
         font-size: var(--tam-fuente-lg);
     }
-  #cabecera{
+  #cabecera{ /*Usamos flex y nowrap para que se posicionen en la misma linea*/
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
@@ -501,7 +504,7 @@ footer {
   }
   #menu{
     display: flex;
-    width: 20%;
+    width: 40%;
   }
   #menu ul{
     display: flex;
@@ -530,20 +533,16 @@ footer {
 }
 #imgGal1, #imgGal2, #imgGal3, #imgGal4, #imgGal5, #imgGal6{
     width: 40%;
-    box-sizing: border-box;
+    height: 35vh;
+    box-sizing: border-box; /*Evita el desbordamiento*/
 }
 #galeria{
-    height: 180vh;
+    height: 130vh;
 }
 #escribenos{
-    height:150vh;
+    height:130vh;
 }
 #divForm{
-    height: 110vh;
+    height: 90vh;
 }
-}
-/* Media queries xl */
-
-@media (min-width: 1200px) {
-
 }
